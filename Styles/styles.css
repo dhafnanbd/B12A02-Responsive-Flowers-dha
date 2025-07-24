@@ -14,9 +14,10 @@
 }
 
 /* Shared Styles */
-*{
+* {
     transition: all 0.4s ease-in-out;
 }
+
 body {
     background-color: #f5f8ff;
 }
@@ -61,7 +62,7 @@ body {
     color: #E95A08;
 }
 
-.btn-primary{
+.btn-primary {
     width: 100%;
     text-align: center;
     font-size: 1rem;
@@ -72,7 +73,7 @@ body {
     cursor: pointer;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #c94b03;
 }
 
@@ -82,15 +83,15 @@ body {
 }
 
 /* Plants Section */
-.plants{
+.plants {
     margin-top: 120px;
 }
 
-.plants p{
+.plants p {
     margin: 16px 0 50px;
 }
 
-.card-container{
+.card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
@@ -98,14 +99,44 @@ body {
 }
 
 /* Card Styles */
-.card .title{
+.card .title {
     font-weight: 500;
     margin-top: 30px;
 }
 
-.card .price{
+.card .price {
     font-weight: 700;
     margin-bottom: 30px;
+}
+
+/* Plant Lover Section Styles */
+.plant-lover {
+    margin-top: 210px;
+}
+
+.plant-lover .image {
+    width: 540px;
+    background-image: url(/assets/flower-store.png);
+}
+
+.plant-lover .info {
+    width: 540px;
+}
+
+.plant-lover .image img {
+    max-width: 286px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -127px;
+    left: 351px;
+}
+
+.plant-lover .info ul {
+    list-style-type: disc;
+}
+
+.plant-lover .info ul li {
+    margin-bottom: 20px;
 }
 
 /* Responsive Styles */
@@ -134,17 +165,42 @@ body {
         max-height: 38px;
     }
 
-    .hero{
+    .hero {
         flex-direction: column-reverse;
         margin-top: 28px;
     }
 
-    .hero img{
+    .hero img {
         margin: 0 -16px 28px;
     }
 
-    .card-container{
+    .card-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plant-lover {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .plant-lover .image {
+        height: 597px;
+        width: 100%;
+        background-image: url(/assets/flower-store.png);
+        margin-bottom: 18px;
+    }
+
+    .plant-lover .info {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .plant-lover .info h3{
+        margin-bottom: 16px;
+    }
+
+    .plant-lover .image img {
+        display: none;
     }
 
 }
@@ -154,7 +210,7 @@ body {
         padding: 0 10px;
     }
 
-    .card-container{
+    .card-container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
