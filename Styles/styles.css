@@ -143,11 +143,11 @@ body {
 
 
 /* Offer Card Section */
-.latest-deal{
+.latest-deal {
     margin-top: 134px;
 }
 
-.deal-description{
+.deal-description {
     margin-top: 16px;
     margin-bottom: 120px;
 }
@@ -190,6 +190,54 @@ body {
     align-items: center;
     color: white;
 }
+
+/* email Subscription Section */
+.subscription {
+    width: 100vw;
+    align-self: center;
+    padding: 200px 0;
+    margin: 120px 0;
+    text-align: center;
+    color: white;
+    background-image: url(/assets/news-letter-bg.png);
+    background-size: cover;
+}
+
+.subscription h3 {
+    color: white;
+}
+
+.subscription form {
+    display: flex;
+    gap: 0;
+    justify-content: space-between;
+    width: 60vw;
+    margin: 23px auto;
+}
+
+.subscription form input[type=email] {
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.subscription form input[type=email]:focus {
+    outline: none;
+}
+
+.subscription form input[type=submit] {
+    background-color: #E95A08;
+    color: white;
+    font-weight: 600;
+    padding: 19px 55px;
+}
+
+.subscription form input[type=submit]:hover {
+    background-color: #c94b03;
+    cursor: pointer;
+}
+
 
 /* Responsive Styles */
 @media screen and (width <=48rem) {
@@ -272,34 +320,46 @@ body {
         display: none;
     }
 
-    .latest-deal{
-    margin-top: 50px;
+    .latest-deal {
+        margin-top: 50px;
+    }
+
+    .deal-description {
+        margin-bottom: 40px;
+    }
+
+    .offer-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .offer-card {
+        height: 185px;
+    }
+
+    .offer-card h4 {
+        font-size: 1.25rem;
+    }
+
+    .offer-card a {
+        font-size: 1rem;
+    }
+
+    .big {
+        order: 3;
+    }
+
+    .subscription {
+    padding: 100px 0;
+    margin: 80px -16px;
 }
 
-.deal-description{
-    margin-bottom: 40px;
+    .subscription form {
+    width: 90vw;
 }
 
-    .offer-card-container{
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
-}
-
-.offer-card{
-    height: 185px;
-}
-
-.offer-card h4{
-    font-size: 1.25rem;
-}
-
-.offer-card a{
-    font-size: 1rem;
-}
-
-.big{
-    order: 3;
-}
+    .subscription form input[type=submit]{
+        padding: 19px 12px;
 
 }
 
