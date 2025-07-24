@@ -1,0 +1,81 @@
+/* Fonts */
+.noto-serif {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Shared Styles */
+.max-width {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.big-text {
+    font-size: 4rem;
+    font-weight: 700;
+    color: black;
+}
+
+.body-text {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section-heading {
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: black;
+}
+
+.small-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.color-dark {
+    color: black;
+}
+
+.color-gray {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Nav bar styles */
+.logo-container img{
+    height: 82px;
+}
+
+
+
+/* Responsive Styles */
+@media screen and (width <=48rem) {
+    body {
+        padding: 0 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .logo-container img{
+        height: 38px;
+    }
+
+}
+
+@media screen and (width >= 48rem) and (width <=64rem) {
+    body {
+        padding: 0 10px;
+    }
+    
+}
