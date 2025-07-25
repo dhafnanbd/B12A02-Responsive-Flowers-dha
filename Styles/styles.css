@@ -116,7 +116,7 @@ body {
 
 .plant-lover .image {
     width: 540px;
-    background-image: url(/assets/flower-store.png);
+    background-image: url("../assets/flower-store.png");
 }
 
 .plant-lover .info {
@@ -199,7 +199,7 @@ body {
     margin: 120px 0 0;
     text-align: center;
     color: white;
-    background-image: url(/assets/news-letter-bg.png);
+    background-image: url("../assets/news-letter-bg.png");
     background-size: cover;
 }
 
