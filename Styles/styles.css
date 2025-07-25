@@ -191,6 +191,16 @@ body {
     color: white;
 }
 
+#card-1{
+    background-image: url("../assets/deal-bloom.png");
+}
+#card-2{
+    background-image: url("../assets/deal-zabo.png");
+}
+#card-3{
+    background-image: url("../assets/deal-ana.png");
+}
+
 /* email Subscription Section */
 .subscription {
     width: 100%;
