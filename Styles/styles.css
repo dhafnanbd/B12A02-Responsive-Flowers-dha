@@ -193,10 +193,10 @@ body {
 
 /* email Subscription Section */
 .subscription {
-    width: 100vw;
+    width: 100%;
     align-self: center;
     padding: 200px 0;
-    margin: 120px 0;
+    margin: 120px 0 0;
     text-align: center;
     color: white;
     background-image: url(/assets/news-letter-bg.png);
@@ -238,6 +238,27 @@ body {
     cursor: pointer;
 }
 
+/* Footer Styles */
+footer{
+    padding: 50px 0;
+}
+
+.column-2{
+    margin-bottom: 32px;
+}
+
+.column-2 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+.column-3 img{
+    max-height: 36px;
+    width: 36px;
+}
+
 
 /* Responsive Styles */
 @media screen and (width <=48rem) {
@@ -253,7 +274,7 @@ body {
         font-size: 1.5rem;
     }
 
-    body {
+    .max-width{
         padding: 0 16px;
     }
 
@@ -303,7 +324,7 @@ body {
     .plant-lover .image {
         height: 597px;
         width: 100%;
-        background-image: url(/assets/flower-store.png);
+        background-image: url("../assets/flower-store.png");
         margin-bottom: 18px;
     }
 
@@ -350,17 +371,28 @@ body {
     }
 
     .subscription {
-    padding: 100px 0;
-    margin: 80px -16px;
-}
+        width: 100%;
+        padding: 100px 0;
+        margin: 80px 0;
+    }
 
     .subscription form {
-    width: 90vw;
-}
+        width: 90vw;
+    }
 
-    .subscription form input[type=submit]{
+    .subscription form input[type=submit] {
         padding: 19px 12px;
 
+    }
+
+    footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .column-2{
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 @media screen and (width >=48rem) and (width <=64rem) {
